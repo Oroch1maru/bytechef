@@ -36,7 +36,8 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\" && eslint src --max-warnings=0 --fix",
     "check": "prettier --check \"**/*.{js,jsx,ts,tsx,md}\" && eslint src --max-warnings=0 && tsc --project tsconfig.json --noEmit && vitest run --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky"
   },
   "dependencies": {
     "@ag-ui/client": "^0.0.41",
@@ -152,6 +153,7 @@
     "eslint-plugin-storybook": "^10.0.7",
     "eslint-plugin-tailwindcss": "^3.18.2",
     "globals": "^15.13.0",
+    "husky": "^9.1.7",
     "identity-obj-proxy": "^3.0.0",
     "isobject": "^4.0.0",
     "jsdom": "^27.2.0",
